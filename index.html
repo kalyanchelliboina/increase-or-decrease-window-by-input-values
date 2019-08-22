@@ -1,0 +1,43 @@
+//Create function
+
+
+<script>
+
+var displayWindow;
+var changeWin;
+var changeWindow;
+
+  function firstFunction() {
+       displayWindow = window.open("","","width=100,height=100");
+}
+
+  function secondFuntion(){
+       displayWindow.resizeTo(600,500);
+       displayWindow.focus();
+}
+
+  function thirdFunction(changeWin, changeWindow){
+       displayWindow.resizeBy(changeWin, changeWindow);
+       displayWindow.focus();
+}
+
+
+</script>
+
+
+
+//call the functions through buttons
+
+
+
+<button type="button" onclick="firstFunction()">Open the window</button><br />
+<button type="button" onclick="secondFunction()">Resize the window</button><br />
+<br />
+<br />
+<input type="text" id="vertical" />
+<input type="text" id="horizontal" />
+<br />
+<input type="button" value="Change the window size" onclick="thirdFunction(changeWin = document.getElementById('vertical').value,changeWindow = document.getElementById('horizontal').value)" />
+
+
+//done......
